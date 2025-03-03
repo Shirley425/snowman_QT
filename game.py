@@ -31,7 +31,7 @@ def snowman(snowman_word):
         letter_guess = get_letter_from_user(correct_letter_guess_statuses, wrong_guesses_list)
         
         if letter_guess in snowman_word:
-            for idx, letter in enumerate(snowman_word):
+            for letter in snowman_word:
                 if letter == letter_guess:
                     correct_letter_guess_statuses[letter] = True
             if is_word_guessed(snowman_word, correct_letter_guess_statuses):
